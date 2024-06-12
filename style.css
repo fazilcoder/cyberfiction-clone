@@ -1,0 +1,164 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: gilbox;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position:relative;
+    overflow: hidden;
+}
+#page{
+    position:relative;
+    height:100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+#page1{
+    height:100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    position:relative;
+}
+#page2{
+    height:100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    position: relative;
+}
+#page3{
+    height:100vh;
+    width: 100vw;
+    background-color: indigo;
+}
+canvas{
+    position:relative;
+    z-index:9;
+    max-width:100vw;
+    max-height:100vh;
+}
+#loop{
+    display: flex;
+    position: absolute;
+    top:30%;
+    height:30%;
+    width:100%;
+    background-color: red;
+    white-space: nowrap;
+    font-size: 90px;
+    font-family: gilroy;
+}
+#loop>h1{
+    font-weight: 500;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+}
+#loop>h1>span{
+    -webkit-text-stroke: 1.2px #000;
+    color:transparent;
+}
+@keyframes anim {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+#nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:10;
+    height:6%;
+    width:100%;
+    
+    position:fixed;
+    padding:0 10px;
+}
+#nav>h3{
+    font-weight: 400;
+    font-family:gilroy;
+}
+#nav b{
+    font-weight: 600;
+}
+#nav>button{
+    padding:10px 20px;
+    border-radius: 50px;
+    background-color: #000;
+    color:#fff;
+    border:none;
+}
+#page >h3{
+    position:absolute;
+    top:60%;
+    font-family: gilroy;
+    font-weight:400;
+    color: #7c7c7c;
+    left:5%
+
+}
+#page>h4{
+    position:absolute;
+    top:70%;
+    left:25%;
+    font-weight:500;
+
+}
+#page1>#right-text{
+    position:absolute;
+    top:30%;
+    left:10%;
+}
+#page1>#right-text>h3{
+    color:#7c7c7c;
+    font-weight: 400;
+}
+#page1>#right-text>h1{
+    line-height:1.3em;
+    font-size: 400;
+
+}
+#page1>#left-text{
+    position:absolute;
+    top:50%;
+    right:10%;
+    text-align: end;
+}
+#page1>#left-text>h1{
+    font-size:40px;
+    line-height: 1.2;
+}
+#page1>#left-text>h3{
+    color:#7c7c7c;
+    font-weight: 400;
+}
+#page2>#text1{
+    position:absolute;
+    top:30%;
+    left:10%;
+}
+#page2>#text1>h3{
+    color:#7c7c7c;
+    font-weight: 400;
+
+}
+#page2>#text1>h1{
+    line-height: 1.5;
+    font-size: 60px;
+}
+#page2>#text2{
+    position:absolute;
+    top:40%;
+    right:8%;
+}
+#page2>#text2>h3{
+    text-align: end;
+}
